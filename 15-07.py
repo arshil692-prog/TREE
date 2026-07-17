@@ -112,25 +112,8 @@ empolyee2 = ["vina","nadim","sarthak"]
 empolyee1.extend(empolyee2)
 print(empolyee1)
 
+
 """
-
-choise = int(input("Enter your chiose:"))
-match "choise":
-    case "choise=1":
-        print("add student")
-    case "choise=2":
-        print("insert student")
-    case "choise=3":
-        print("update student")
-    case "choise=4":
-        print("update student")
-    case "choise=5":
-        print("exist")
-    case _:
-        print("invalid choise")
-        """
-
-
 # ==========================================
 # Student Management System
 # ==========================================
@@ -214,5 +197,40 @@ while True:
         # -------------------------------
         case _:
             print("Invalid Choice. Please Try Again.")
+            """
 
+
+#section F 
+fruits = ["apple","banana","kevi","deagonfruit","mango","cherry"]
+print(fruits)
+removed_fruits= fruits.pop(1)
+print("removed_fruits",removed_fruits)
+print("updated fruits",fruits)
+del fruits[3]
+print(fruits)
+
+num7 = [1,2,3,4,5,6,7,8,9,10,2,3,44,55,]
+del num7 [1:6]
+print(num7)
+num7.clear()
+print(num7)
+
+num8 = [10,20,30,40,50,20,70,80]
+num8.remove(20)
+print(num8)
+
+#clear mothod
+#Removes all elements from the list.	
+#The list still exists.
+#del method
+#The list variable may no longer exist (if deleting the whole list).
+#Deletes an element, a slice, or the entire list variable
+
+num9 = [1,2,10,23,10,22,10,44,10,22,10,23]
+print (len(num9))
+print(num9.count(10))
+
+num10 = ["python","c++","java"]
+print(num10.index("python"))
+print("java" in num10)
 
