@@ -52,3 +52,54 @@ print(name.lower())
 print(name.title())
 print(name.capitalize())
 print(name.swapcase())
+
+# ============================
+# 6. Searching Methods
+# ============================
+
+sentence = "Python Programming"
+
+print(sentence.find("P"))
+print(sentence.find("Java"))
+print(sentence.rfind("P"))
+print(sentence.index("Programming"))
+print(sentence.count("m"))
+
+# ============================
+# 7. Checking Start & End
+# ============================
+
+filename = "notes.pdf"
+
+print(filename.startswith("notes"))
+print(filename.endswith(".pdf"))
+
+# ============================
+# 8. Replace Method
+# ============================
+
+text = "I like Java"
+
+print(text.replace("Java", "Python"))
+
+# ============================
+# 9. Strip Methods
+# ============================
+
+name = "   Arshil   "
+
+print(name.strip())
+print(name.lstrip())
+print(name.rstrip())
+
+# ============================
+# 10. Split Method
+# ============================
+
+fruits = "Apple Mango Banana"
+
+print(fruits.split())
+
+data = "Red,Green,Blue"
+
+print(data.split(","))
