@@ -206,3 +206,107 @@ for ch in word:
 
 for index, ch in enumerate(word):
     print(index, ch)
+
+
+# ============================
+# 21. Reverse String
+# ============================
+
+print(word[::-1])
+
+# ============================
+# 22. Count Vowels
+# ============================
+
+text = "Programming"
+
+count = 0
+
+for ch in text.lower():
+    if ch in "aeiou":
+        count += 1
+
+print(count)
+
+# ============================
+# 23. Palindrome Check
+# ============================
+
+word = "madam"
+
+if word == word[::-1]:
+    print("Palindrome")
+else:
+    print("Not Palindrome")
+
+# ============================
+# 24. Remove Spaces
+# ============================
+
+text = "Python Programming"
+
+print(text.replace(" ", ""))
+
+# ============================
+# 25. Reverse Words
+# ============================
+
+sentence = "I Love Python"
+
+words = sentence.split()
+
+print(words[::-1])
+
+print(" ".join(words[::-1]))
+
+# ============================
+# 26. Find Maximum Character
+# ============================
+
+text = "python"
+
+print(max(text))
+print(min(text))
+
+# ============================
+# 27. ASCII Conversion
+# ============================
+
+print(ord("A"))
+print(chr(65))
+
+# ============================
+# 28. String Immutability
+# ============================
+
+name = "Python"
+
+# name[0] = "J"   # TypeError
+
+name = "Jython"
+
+print(name)
+
+# ============================
+# 29. Remove Duplicate Characters
+# ============================
+
+text = "programming"
+
+result = ""
+
+for ch in text:
+    if ch not in result:
+        result += ch
+
+print(result)
+
+# ============================
+# 30. List Comprehension with String
+# ============================
+
+word = "python"
+
+upper = [ch.upper() for ch in word]
+
+print(upper)
